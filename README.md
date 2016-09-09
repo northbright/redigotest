@@ -1,4 +1,7 @@
 # redigotest
+
+[![Build Status](https://travis-ci.org/northbright/redigotest.svg?branch=master)](https://travis-ci.org/northbright/redigotest)
+
 redigotest contains test examples for using Redigo.
 
 #### Get redigo reply types in Golang
