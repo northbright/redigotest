@@ -2,9 +2,9 @@
 
 [![Build Status](https://travis-ci.org/northbright/redigotest.svg?branch=master)](https://travis-ci.org/northbright/redigotest)
 
-redigotest contains test examples for using Redigo.
+redigotest contains test examples for using [redigo](https://github.com/garyburd/redigo).
 
-#### Get redigo reply types in Golang
+#### Get [redigo](https://github.com/garyburd/redigo) reply types in Golang
 It'll use GetReplyType() with test Redis commands to see what's the reply type in Golang for each Redis command.
 
     GetReplyType(): do cmds
