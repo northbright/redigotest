@@ -15,3 +15,6 @@ It'll use GetReplyType() with test Redis commands to see what's the reply type i
     HGET ok, args: [student:1 name], ret type: []uint8, ret: [66 111 98]
     INCR ok, args: [student:num], ret type: int64, ret: 1
     GET ok, args: [student:num], ret type: []uint8, ret: [49]
+    LPUSH ok, args: [laststudents 1 2 3], ret type: int64, ret: 3
+    LRANGE ok, args: [laststudents 0 -1], ret type: []interface {}, ret: [[51] [50] [49]]
+
