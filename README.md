@@ -4,7 +4,7 @@
 
 redigotest contains test examples for using [redigo](https://github.com/garyburd/redigo).
 
-#### Get [redigo](https://github.com/garyburd/redigo) reply types in Golang
+#### Get type of reply after [exectuing commands](https://godoc.org/github.com/garyburd/redigo/redis#hdr-Executing_Commands)
 It'll use GetReplyType() with test Redis commands to see what's the reply type in Golang for each Redis command.
 
     GetReplyType(): do cmds
