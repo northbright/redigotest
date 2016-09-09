@@ -12,7 +12,7 @@ type Command struct {
 }
 
 // NewRedisPool() creates a Redis Pool.
-func NewRedisPool(server, password string) *redis.Pool {
+func NewRedisPool(server string, requirepass bool, password string) *redis.Pool {
 	return &redis.Pool{
 		MaxIdle:     3,
 		IdleTimeout: 240 * time.Second,
@@ -21,9 +21,11 @@ func NewRedisPool(server, password string) *redis.Pool {
 			if err != nil {
 				return nil, err
 			}
-			if _, err := c.Do("AUTH", password); err != nil {
-				c.Close()
-				return nil, err
+			if requirepass {
+				if _, err := c.Do("AUTH", password); err != nil {
+					c.Close()
+					return nil, err
+				}
 			}
 			return c, err
 		},

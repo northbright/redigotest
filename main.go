@@ -19,7 +19,7 @@ var (
 )
 
 func main() {
-	pool = NewRedisPool(":6379", "")
+	pool = NewRedisPool(":6379", false, "")
 	// Test reply types of Golang for Redis Commands.
 	GetReplyType(replyTestCmds)
 }
