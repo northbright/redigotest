@@ -18,3 +18,13 @@ It'll use GetReplyType() with test Redis commands to see what's the reply type i
     LPUSH ok, args: [laststudents 1 2 3], ret type: int64, ret: 3
     LRANGE ok, args: [laststudents 0 -1], ret type: []interface {}, ret: [[51] [50] [49]]
 
+#### [Redis command reply types -> Go types](https://godoc.org/github.com/garyburd/redigo/redis#hdr-Executing_Commands)
+    Redis command reply types are represented using the following Go types:
+
+    Redis type              Go type
+    error                   redis.Error
+    integer                 int64
+    simple string           string
+    bulk string             []byte or nil if value not present.
+    array                   []interface{} or nil if value not present.
+
