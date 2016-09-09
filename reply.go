@@ -4,6 +4,7 @@ import (
 	"fmt"
 )
 
+// GetReplyType() does test Redis commands to see what's the reply type in Golang for each Redis command.
 func GetReplyType(cmds []Command) {
 	conn := pool.Get()
 	defer conn.Close()
