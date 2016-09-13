@@ -9,6 +9,7 @@ var (
 
 	replyTestCmds = []Command{
 		Command{Cmd: "FLUSHALL", Args: []interface{}{}},
+		Command{Cmd: "INFO", Args: []interface{}{"keyspace"}},
 		Command{Cmd: "SET", Args: []interface{}{"student:num", 0}},
 		Command{Cmd: "GET", Args: []interface{}{"student:num"}},
 		Command{Cmd: "HSET", Args: []interface{}{"student:1", "name", "Bob"}},

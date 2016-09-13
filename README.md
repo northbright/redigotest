@@ -9,6 +9,7 @@ It'll use GetReplyType() with test Redis commands to see what's the reply type i
 
     GetReplyType(): do cmds
     FLUSHALL ok, args: [], ret type: string, ret: OK
+    INFO ok, args: [keyspace], ret type: []uint8, ret: [35 32 75 101 121 115 112 97 99 101 13 10]
     SET ok, args: [student:num 0], ret type: string, ret: OK
     GET ok, args: [student:num], ret type: []uint8, ret: [48]
     HSET ok, args: [student:1 name Bob], ret type: int64, ret: 1
