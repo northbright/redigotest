@@ -17,6 +17,7 @@ It'll use GetReplyType() with test Redis commands to see what's the reply type i
     GET ok, args: [student:num], ret type: []uint8, ret: [49]
     LPUSH ok, args: [laststudents 1 2 3], ret type: int64, ret: 3
     LRANGE ok, args: [laststudents 0 -1], ret type: []interface {}, ret: [[51] [50] [49]]
+    HSCAN ok, args: [student:1 0], ret type: []interface {}, ret: [[48] [[110 97 109 101] [66 111 98] [97 103 101] [50 48]]]
 
 #### [Redis command reply types -> Go types](https://godoc.org/github.com/garyburd/redigo/redis#hdr-Executing_Commands)
     Redis command reply types are represented using the following Go types:
