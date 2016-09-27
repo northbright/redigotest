@@ -1,8 +1,9 @@
-package main
+package redigotest
 
 import (
-	"github.com/garyburd/redigo/redis"
 	"time"
+
+	"github.com/garyburd/redigo/redis"
 )
 
 // Redis command
