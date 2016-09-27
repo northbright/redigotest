@@ -25,6 +25,8 @@ var (
 
 func main() {
 	pool = NewRedisPool(":6379", false, "")
+	c := pool.Get()
+	defer c.Close()
 	// Test reply types of Golang for Redis Commands.
-	GetReplyType(replyTestCmds)
+	GetReplyType(c, replyTestCmds)
 }
