@@ -4,3 +4,5 @@
 !*.md
 !*.yml
 !*.go
+!*.json
+!*.sh
