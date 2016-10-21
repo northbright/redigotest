@@ -6,6 +6,7 @@ import (
 	"github.com/garyburd/redigo/redis"
 )
 
+// SetInt tests the return value of "SET" command with integer or string.
 func SetInt(c redis.Conn, k string, v interface{}) {
 	c.Do("DEL", k)
 	log.Printf("SET k: %v, v: %v(%T)\n", k, v, v)
