@@ -1,6 +1,7 @@
 # redigotest
 
 [![Build Status](https://travis-ci.org/northbright/redigotest.svg?branch=master)](https://travis-ci.org/northbright/redigotest)
+[![Go Report Card](https://goreportcard.com/badge/github.com/northbright/redigotest)](https://goreportcard.com/report/github.com/northbright/redigotest)
 
 redigotest contains test examples for using [redigo](https://github.com/garyburd/redigo).
 
