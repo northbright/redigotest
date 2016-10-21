@@ -4,7 +4,7 @@ import (
 	"github.com/northbright/redigotest"
 )
 
-func Example_SetInt() {
+func ExampleSetInt() {
 	var vUint64 uint64 = 12345678
 	var vInt64 int64 = 12345678
 	var vStr string = "12345678"
