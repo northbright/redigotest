@@ -4,8 +4,8 @@ import (
 	"github.com/northbright/redigotest"
 )
 
-// Example_GetReplyType tests the return value and types of Redis Commands.
-func Example_GetReplyType() {
+// ExampleGetReplyType tests the return value and types of Redis Commands.
+func ExampleGetReplyType() {
 	cmds := []redigotest.Command{
 		redigotest.Command{Cmd: "FLUSHALL", Args: []interface{}{}},
 		redigotest.Command{Cmd: "INFO", Args: []interface{}{"keyspace"}},
