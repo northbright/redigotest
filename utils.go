@@ -6,13 +6,13 @@ import (
 	"github.com/garyburd/redigo/redis"
 )
 
-// Redis command
+// Command type represents Redis command.
 type Command struct {
 	Cmd  string
 	Args []interface{}
 }
 
-// NewRedisPool() creates a Redis Pool.
+// NewRedisPool creates a Redis Pool.
 func NewRedisPool(server string, requirepass bool, password string) *redis.Pool {
 	return &redis.Pool{
 		MaxIdle:     3,

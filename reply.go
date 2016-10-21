@@ -6,7 +6,7 @@ import (
 	"github.com/garyburd/redigo/redis"
 )
 
-// GetReplyType() does test Redis commands to see what's the reply type in Golang for each Redis command.
+// GetReplyType does test Redis commands to see what's the reply type in Golang for each Redis command.
 func GetReplyType(c redis.Conn, cmds []Command) {
 	// Do commands.
 	log.Printf("GetReplyType(): do cmds\n")
