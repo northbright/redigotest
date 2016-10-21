@@ -1,3 +1,4 @@
+// Package redigotest_test is test package for redigotest.
 package redigotest_test
 
 import (
